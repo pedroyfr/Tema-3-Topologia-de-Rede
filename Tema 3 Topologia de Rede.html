@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resumo</title>
+</head>
+<body>
+
+
+
+<h1>Tema 3 Topologia de Rede</h1>
+<p>Topologia é um sistema no qual demonstra como os hosts estão conectados na rede.</p>
+<h1>Tipos de Topologia</h1>
+<p>Topologia Física: Demonstra de fato como os hosts estão dispostos e conectados no ambiente
+    físico (Layout Físico). A posição de cada host, a forma que
+    os cabos estão conectados, nós denominamos de topologia de rede, que tem como objetivo 
+    de auxiliar em varios pontos críticos, como a maleabilidade, velocidade
+na transferência dos dados e segurança.</p>
+<p>Topologia Lógica: Demonstra a forma como os dados são transmitidos na rede, ou a forma 
+    como esses dados passam de um host a outro, sem se preocupar com a conexão física dos 
+    hosts, a forma como os dados são transmitidos na rede podem ser controladas por switches e 
+    roteadores.</p>
+    <h1>Benefícios e desvantagens de cada Topologia:</h1>
+<h1>Barramento</h1>
+<p>Todos os hosts estão conectados ao mesmo meio físico (barramento), embora os dados não 
+"circulem" dentro de cada um dos nós, ou seja, se um computador estiver "escrevendo" aos 
+outros computadores escutam e coletam os dados que é destinado para ele. Se um computador 
+estiver enviando um sinal na rede e outro computador estiver tentando fazer o mesmo, ali se 
+caracteriza uma colisão na rede, e se esse fato ocorrer terá que recomeçar a conexão.</p>
+<img src="TopologiaBUS.png" alt="">
+<h1>Benefícios:</h1>
+• Utilizam-se poucos cabos; 
+• Sua instalação é simples, seus meios físicos são economicamente barato;
+• Simples e relativamente confiável; 
+• Sua topologia é simples e de certa forma confiável;
+• E se necessário permite a ampliação da rede sem complicações.
+<h1>Desvantagens:</h1>
+• A comunicação entre os hosts pode ficar lenta se o tráfego na rede aumentar;
+• Problemas são difíceis de isolar; 
+• Caso ocorra um problema, o mesmo é difícil de identificar e isolar;
+• Se por algum motivo houver uma falha no cabo de rede, a rede de sua empresa não irá funcionar.
+<h1>Estrela</h1>
+Atualmente é a topologia mais utilizada, esta topologia usa o meio físico de par trançado com um 
+centralizador de rede (Switch e Roteador), este se encarrega de fazer a comunicação entre os hosts,
+isso facilita a detecção dos problemas, ou seja, se um computador não estiver ligado na 
+rede o LED (Luz) do concentrador ficará desligado indicando que há um problema no host.
+<img src="TopologiaSTAR.jpg" alt=""> 
+<h1>Benefícios:</h1>
+• Facilita a instalação e configuração dos computadores na rede; 
+• A gerencia dos equipamentos é centralizado; 
+• Caso um computador esteja com falha, o mesmo não paralisa a rede.
+<h1>Desvantagem:</h1>
+Se o centralizador da rede apresentar falha, o mesmo ocasiona a paralisação na rede.
+<h1>Anel:</h1>
+Estes hosts são conectados em série, no qual se caracteriza em um círculo formado (anel), estes 
+dados são propagados em uma única direção de host a host até chegar em seu destino, ou seja, 
+se uma estação transmitir uma mensagem, terá que retransmitir para todas as estações até 
+chegar em seu destino, esta mensagem somente o host poderá retirar da rede quem transmiti 
+ou recebe a mesma.
+<img src="TopologiaRING.jpg" alt="">
+<h1>Benefícios:</h1>
+• Os hosts conseguem acessar a rede de uma maneira uniforme;
+• O crescimento dos hosts não altera o desempenho da rede.
+<h1>Desvantagens:</h1>
+• Se um desses hosts falhar, poderá impactar toda a rede;
+• Difícil isolar os Hosts.
+<h1>Malha:</h1>
+Esta é uma das topologias muito utilizada, pois é facilita a instalação e a configuração dos hosts. 
+É como se todos os nós estivessem entrelaçados entre si, pois são diversos caminhos possíveis 
+por onde os dados podem trafegar até o destino.
+<img src="TopologiaMALHA.jpg" alt="">
+<h1>Benefícios:</h1>
+• Maior abundância e confiabilidade; 
+• Agilidade de reconhecimento nas falhas que possa ocorrer na rede.
+<h1>Desvantagem:</h1>
+Alto custo na implantação.
+
+
+
+
+
+
+
+</body>
+</html>
+
