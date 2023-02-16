@@ -8,76 +8,123 @@
 
 
 <h1>Tema 3 Topologia de Rede</h1>
-<p>Topologia é um sistema no qual demonstra como os hosts estão conectados na rede.</p>
+Topologia é um sistema no qual demonstra como os hosts estão conectados na rede.
+
 <h1>Tipos de Topologia</h1>
-<p>Topologia Física: Demonstra de fato como os hosts estão dispostos e conectados no ambiente
-    físico (Layout Físico). A posição de cada host, a forma que
-    os cabos estão conectados, nós denominamos de topologia de rede, que tem como objetivo 
-    de auxiliar em varios pontos críticos, como a maleabilidade, velocidade
-na transferência dos dados e segurança.</p>
-<p>Topologia Lógica: Demonstra a forma como os dados são transmitidos na rede, ou a forma 
-    como esses dados passam de um host a outro, sem se preocupar com a conexão física dos 
-    hosts, a forma como os dados são transmitidos na rede podem ser controladas por switches e 
-    roteadores.</p>
-    <h1>Benefícios e desvantagens de cada Topologia:</h1>
+
+<p>
+<b>Topologia Física:</b> Demonstra de fato como os hosts estão dispostos e conectados no ambiente
+físico (Layout Físico). A posição de cada host, a forma que
+os cabos estão conectados, nós denominamos de topologia de rede, que tem como objetivo 
+de auxiliar em varios pontos críticos, como a maleabilidade, velocidade na transferência dos dados e segurança.
+</p>
+
+<p>
+<b>Topologia Lógica:</b> Demonstra a forma como os dados são transmitidos na rede, ou a forma 
+como esses dados passam de um host a outro, sem se preocupar com a conexão física dos 
+hosts, a forma como os dados são transmitidos na rede podem ser controladas por switches e 
+roteadores. 
+</p>
+
+<h1>Benefícios e desvantagens de cada Topologia:</h1>
+
 <h1>Barramento</h1>
+
 <p>Todos os hosts estão conectados ao mesmo meio físico (barramento), embora os dados não 
 "circulem" dentro de cada um dos nós, ou seja, se um computador estiver "escrevendo" aos 
 outros computadores escutam e coletam os dados que é destinado para ele. Se um computador 
 estiver enviando um sinal na rede e outro computador estiver tentando fazer o mesmo, ali se 
 caracteriza uma colisão na rede, e se esse fato ocorrer terá que recomeçar a conexão.</p>
+
 <img src="TopologiaBUS.png" alt="">
+
 <h1>Benefícios:</h1>
-• Utilizam-se poucos cabos; 
-• Sua instalação é simples, seus meios físicos são economicamente barato;
-• Simples e relativamente confiável; 
-• Sua topologia é simples e de certa forma confiável;
-• E se necessário permite a ampliação da rede sem complicações.
+
+<ul>
+    <li> Utilizam-se poucos cabos; </li>
+    <li> Sua instalação é simples, seus meios físicos são economicamente barato;</li>
+    <li> Simples e relativamente confiável; </li>
+    <li> topologia é simples e de certa forma confiável;</li>
+    <li> E se necessário permite a ampliação da rede sem complicações.</li>
+</ul>
+
 <h1>Desvantagens:</h1>
-• A comunicação entre os hosts pode ficar lenta se o tráfego na rede aumentar;
-• Problemas são difíceis de isolar; 
-• Caso ocorra um problema, o mesmo é difícil de identificar e isolar;
-• Se por algum motivo houver uma falha no cabo de rede, a rede de sua empresa não irá funcionar.
+
+<ul>
+    <li>A comunicação entre os hosts pode ficar lenta se o tráfego na rede aumentar;</li>
+    <li>Problemas são difíceis de isolar;</li>
+    <li>Caso ocorra um problema, o mesmo é difícil de identificar e isolar;</li>
+    <li>Se por algum motivo houver uma falha no cabo de rede, a rede de sua empresa não irá funcionar.</li>
+</ul>
+
 <h1>Estrela</h1>
+
+<p>
 Atualmente é a topologia mais utilizada, esta topologia usa o meio físico de par trançado com um 
 centralizador de rede (Switch e Roteador), este se encarrega de fazer a comunicação entre os hosts,
 isso facilita a detecção dos problemas, ou seja, se um computador não estiver ligado na 
 rede o LED (Luz) do concentrador ficará desligado indicando que há um problema no host.
+</p>
+
 <img src="TopologiaSTAR.jpg" alt=""> 
+
 <h1>Benefícios:</h1>
-• Facilita a instalação e configuração dos computadores na rede; 
-• A gerencia dos equipamentos é centralizado; 
-• Caso um computador esteja com falha, o mesmo não paralisa a rede.
+
+<ul>
+    <li>Facilita a instalação e configuração dos computadores na rede;</li>
+    <li>A gerencia dos equipamentos é centralizado;</li>
+    <li>Caso um computador esteja com falha, o mesmo não paralisa a rede.</li>
+</ul>
+
+
 <h1>Desvantagem:</h1>
+
 Se o centralizador da rede apresentar falha, o mesmo ocasiona a paralisação na rede.
+
 <h1>Anel:</h1>
+
+<p>
 Estes hosts são conectados em série, no qual se caracteriza em um círculo formado (anel), estes 
 dados são propagados em uma única direção de host a host até chegar em seu destino, ou seja, 
 se uma estação transmitir uma mensagem, terá que retransmitir para todas as estações até 
 chegar em seu destino, esta mensagem somente o host poderá retirar da rede quem transmiti 
 ou recebe a mesma.
+</p>
+
 <img src="TopologiaRING.jpg" alt="">
+
 <h1>Benefícios:</h1>
-• Os hosts conseguem acessar a rede de uma maneira uniforme;
-• O crescimento dos hosts não altera o desempenho da rede.
+
+<ul>
+    <li>Os hosts conseguem acessar a rede de uma maneira uniforme;</li>
+    <li>O crescimento dos hosts não altera o desempenho da rede.</li>
+</ul>
+
 <h1>Desvantagens:</h1>
-• Se um desses hosts falhar, poderá impactar toda a rede;
-• Difícil isolar os Hosts.
+
+<ul>
+    <li>Se um desses hosts falhar, poderá impactyar toda a rede;</li>
+    <li>Difícil isolar os Hosts.</li>
+</ul>
+
 <h1>Malha:</h1>
+
 Esta é uma das topologias muito utilizada, pois é facilita a instalação e a configuração dos hosts. 
 É como se todos os nós estivessem entrelaçados entre si, pois são diversos caminhos possíveis 
 por onde os dados podem trafegar até o destino.
+
 <img src="TopologiaMALHA.jpg" alt="">
+
 <h1>Benefícios:</h1>
-• Maior abundância e confiabilidade; 
-• Agilidade de reconhecimento nas falhas que possa ocorrer na rede.
+
+<ul>
+    <li>Maior abundância e confiabilidade;</li>
+    <li>Agilidade de reconhecimento nas falhas que possa ocorrer na rede.</li>
+</ul>
+
 <h1>Desvantagem:</h1>
+
 Alto custo na implantação.
-
-
-
-
-
 
 
 </body>
